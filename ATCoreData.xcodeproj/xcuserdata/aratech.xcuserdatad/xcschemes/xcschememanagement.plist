@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>ATCoreData-iOS.xcscheme</key>
+		<key>ATCoreData-iOS.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
@@ -17,6 +17,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>2E48683920F61423009E5371</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>2EAF5BFA20ECB15E007A22EB</key>
 		<dict>
 			<key>primary</key>

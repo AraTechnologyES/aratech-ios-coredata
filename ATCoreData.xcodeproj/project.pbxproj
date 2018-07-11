@@ -12,6 +12,10 @@
 		2E48682A20F5F2D5009E5371 /* ATManagedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E48682920F5F2D5009E5371 /* ATManagedTests.swift */; };
 		2E48682D20F5F554009E5371 /* Insertions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E48682C20F5F554009E5371 /* Insertions.swift */; };
 		2E48682F20F5F5A8009E5371 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E48682E20F5F5A8009E5371 /* Context.swift */; };
+		2E48683E20F61423009E5371 /* ATCoreData_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E48683C20F61423009E5371 /* ATCoreData_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E48684220F6144F009E5371 /* ATPersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAF5C3320ECB3C5007A22EB /* ATPersistentContainer.swift */; };
+		2E48684320F61452009E5371 /* ATManaged.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E48682320F5EACA009E5371 /* ATManaged.swift */; };
+		2E48684420F61455009E5371 /* NSManagedObjectContext+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E48682520F5EC80009E5371 /* NSManagedObjectContext+Extensions.swift */; };
 		2EAF5C0520ECB15F007A22EB /* ATCoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EAF5BFB20ECB15E007A22EB /* ATCoreData.framework */; };
 		2EAF5C0C20ECB15F007A22EB /* ATCoreData.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EAF5BFE20ECB15E007A22EB /* ATCoreData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2EAF5C3420ECB3C5007A22EB /* ATPersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAF5C3320ECB3C5007A22EB /* ATPersistentContainer.swift */; };
@@ -37,6 +41,9 @@
 		2E48682920F5F2D5009E5371 /* ATManagedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATManagedTests.swift; sourceTree = "<group>"; };
 		2E48682C20F5F554009E5371 /* Insertions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Insertions.swift; sourceTree = "<group>"; };
 		2E48682E20F5F5A8009E5371 /* Context.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
+		2E48683A20F61423009E5371 /* ATCoreData_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ATCoreData_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E48683C20F61423009E5371 /* ATCoreData_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATCoreData_iOS.h; sourceTree = "<group>"; };
+		2E48683D20F61423009E5371 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2EAF5BFB20ECB15E007A22EB /* ATCoreData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ATCoreData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EAF5BFE20ECB15E007A22EB /* ATCoreData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATCoreData.h; sourceTree = "<group>"; };
 		2EAF5BFF20ECB15E007A22EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +56,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2E48683620F61423009E5371 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2EAF5BF720ECB15E007A22EB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -92,11 +106,21 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		2E48683B20F61423009E5371 /* ATCoreData-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				2E48683C20F61423009E5371 /* ATCoreData_iOS.h */,
+				2E48683D20F61423009E5371 /* Info.plist */,
+			);
+			path = "ATCoreData-iOS";
+			sourceTree = "<group>";
+		};
 		2EAF5BF120ECB15E007A22EB = {
 			isa = PBXGroup;
 			children = (
 				2EAF5BFD20ECB15E007A22EB /* ATCoreData */,
 				2EAF5C0820ECB15F007A22EB /* ATCoreDataTests */,
+				2E48683B20F61423009E5371 /* ATCoreData-iOS */,
 				2EAF5BFC20ECB15E007A22EB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -106,6 +130,7 @@
 			children = (
 				2EAF5BFB20ECB15E007A22EB /* ATCoreData.framework */,
 				2EAF5C0420ECB15F007A22EB /* ATCoreDataTests.xctest */,
+				2E48683A20F61423009E5371 /* ATCoreData_iOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,6 +163,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		2E48683720F61423009E5371 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E48683E20F61423009E5371 /* ATCoreData_iOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2EAF5BF820ECB15E007A22EB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -149,6 +182,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		2E48683920F61423009E5371 /* ATCoreData-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E48683F20F61423009E5371 /* Build configuration list for PBXNativeTarget "ATCoreData-iOS" */;
+			buildPhases = (
+				2E48683520F61423009E5371 /* Sources */,
+				2E48683620F61423009E5371 /* Frameworks */,
+				2E48683720F61423009E5371 /* Headers */,
+				2E48683820F61423009E5371 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ATCoreData-iOS";
+			productName = "ATCoreData-iOS";
+			productReference = 2E48683A20F61423009E5371 /* ATCoreData_iOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		2EAF5BFA20ECB15E007A22EB /* ATCoreData */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2EAF5C0F20ECB15F007A22EB /* Build configuration list for PBXNativeTarget "ATCoreData" */;
@@ -195,6 +246,9 @@
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = Aratech;
 				TargetAttributes = {
+					2E48683920F61423009E5371 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
 					2EAF5BFA20ECB15E007A22EB = {
 						CreatedOnToolsVersion = 9.4.1;
 						LastSwiftMigration = 0940;
@@ -217,12 +271,20 @@
 			projectRoot = "";
 			targets = (
 				2EAF5BFA20ECB15E007A22EB /* ATCoreData */,
+				2E48683920F61423009E5371 /* ATCoreData-iOS */,
 				2EAF5C0320ECB15F007A22EB /* ATCoreDataTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2E48683820F61423009E5371 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2EAF5BF920ECB15E007A22EB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -240,6 +302,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2E48683520F61423009E5371 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E48684320F61452009E5371 /* ATManaged.swift in Sources */,
+				2E48684220F6144F009E5371 /* ATPersistentContainer.swift in Sources */,
+				2E48684420F61455009E5371 /* NSManagedObjectContext+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2EAF5BF620ECB15E007A22EB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -275,6 +347,59 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		2E48684020F61423009E5371 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "ATCoreData-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aratech.ATCoreData-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2E48684120F61423009E5371 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "ATCoreData-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aratech.ATCoreData-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		2EAF5C0D20ECB15F007A22EB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -486,6 +611,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2E48683F20F61423009E5371 /* Build configuration list for PBXNativeTarget "ATCoreData-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E48684020F61423009E5371 /* Debug */,
+				2E48684120F61423009E5371 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2EAF5BF520ECB15E007A22EB /* Build configuration list for PBXProject "ATCoreData" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
