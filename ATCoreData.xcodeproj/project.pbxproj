@@ -7,9 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E48682420F5EACA009E5371 /* ATManaged.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E48682320F5EACA009E5371 /* ATManaged.swift */; };
+		2E48682620F5EC80009E5371 /* NSManagedObjectContext+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E48682520F5EC80009E5371 /* NSManagedObjectContext+Extensions.swift */; };
+		2E48682A20F5F2D5009E5371 /* ATManagedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E48682920F5F2D5009E5371 /* ATManagedTests.swift */; };
+		2E48682D20F5F554009E5371 /* Insertions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E48682C20F5F554009E5371 /* Insertions.swift */; };
+		2E48682F20F5F5A8009E5371 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E48682E20F5F5A8009E5371 /* Context.swift */; };
 		2EAF5C0520ECB15F007A22EB /* ATCoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EAF5BFB20ECB15E007A22EB /* ATCoreData.framework */; };
-		2EAF5C0A20ECB15F007A22EB /* ATCoreDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAF5C0920ECB15F007A22EB /* ATCoreDataTests.swift */; };
 		2EAF5C0C20ECB15F007A22EB /* ATCoreData.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EAF5BFE20ECB15E007A22EB /* ATCoreData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2EAF5C3420ECB3C5007A22EB /* ATPersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAF5C3320ECB3C5007A22EB /* ATPersistentContainer.swift */; };
+		2EAF5C3620ECB6D1007A22EB /* ATPersistentContainerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAF5C3520ECB6D1007A22EB /* ATPersistentContainerTests.swift */; };
+		2EAF5C3820ECB8F7007A22EB /* ATDataControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAF5C3720ECB8F7007A22EB /* ATDataControllerMock.swift */; };
+		2EAF5C3B20ECC13C007A22EB /* ATCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2EAF5C3920ECC13C007A22EB /* ATCoreData.xcdatamodeld */; };
+		2EAF5C3C20ECC145007A22EB /* ATCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2EAF5C3920ECC13C007A22EB /* ATCoreData.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +32,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E48682320F5EACA009E5371 /* ATManaged.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATManaged.swift; sourceTree = "<group>"; };
+		2E48682520F5EC80009E5371 /* NSManagedObjectContext+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Extensions.swift"; sourceTree = "<group>"; };
+		2E48682920F5F2D5009E5371 /* ATManagedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATManagedTests.swift; sourceTree = "<group>"; };
+		2E48682C20F5F554009E5371 /* Insertions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Insertions.swift; sourceTree = "<group>"; };
+		2E48682E20F5F5A8009E5371 /* Context.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
 		2EAF5BFB20ECB15E007A22EB /* ATCoreData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ATCoreData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EAF5BFE20ECB15E007A22EB /* ATCoreData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATCoreData.h; sourceTree = "<group>"; };
 		2EAF5BFF20ECB15E007A22EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2EAF5C0420ECB15F007A22EB /* ATCoreDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ATCoreDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2EAF5C0920ECB15F007A22EB /* ATCoreDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATCoreDataTests.swift; sourceTree = "<group>"; };
 		2EAF5C0B20ECB15F007A22EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EAF5C3320ECB3C5007A22EB /* ATPersistentContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATPersistentContainer.swift; sourceTree = "<group>"; };
+		2EAF5C3520ECB6D1007A22EB /* ATPersistentContainerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATPersistentContainerTests.swift; sourceTree = "<group>"; };
+		2EAF5C3720ECB8F7007A22EB /* ATDataControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATDataControllerMock.swift; sourceTree = "<group>"; };
+		2EAF5C3A20ECC13C007A22EB /* ATCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ATCoreData.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +67,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E48682B20F5F52A009E5371 /* NSManagedObjectHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				2E48682E20F5F5A8009E5371 /* Context.swift */,
+				2E48682C20F5F554009E5371 /* Insertions.swift */,
+			);
+			path = NSManagedObjectHelpers;
+			sourceTree = "<group>";
+		};
+		2E48683320F60A21009E5371 /* Managed */ = {
+			isa = PBXGroup;
+			children = (
+				2E48682320F5EACA009E5371 /* ATManaged.swift */,
+			);
+			path = Managed;
+			sourceTree = "<group>";
+		};
+		2E48683420F60A3D009E5371 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2E48682520F5EC80009E5371 /* NSManagedObjectContext+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		2EAF5BF120ECB15E007A22EB = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +113,10 @@
 		2EAF5BFD20ECB15E007A22EB /* ATCoreData */ = {
 			isa = PBXGroup;
 			children = (
+				2EAF5C3320ECB3C5007A22EB /* ATPersistentContainer.swift */,
+				2E48683320F60A21009E5371 /* Managed */,
+				2E48683420F60A3D009E5371 /* Extensions */,
+				2EAF5C3920ECC13C007A22EB /* ATCoreData.xcdatamodeld */,
 				2EAF5BFE20ECB15E007A22EB /* ATCoreData.h */,
 				2EAF5BFF20ECB15E007A22EB /* Info.plist */,
 			);
@@ -80,7 +126,10 @@
 		2EAF5C0820ECB15F007A22EB /* ATCoreDataTests */ = {
 			isa = PBXGroup;
 			children = (
-				2EAF5C0920ECB15F007A22EB /* ATCoreDataTests.swift */,
+				2E48682B20F5F52A009E5371 /* NSManagedObjectHelpers */,
+				2EAF5C3720ECB8F7007A22EB /* ATDataControllerMock.swift */,
+				2EAF5C3520ECB6D1007A22EB /* ATPersistentContainerTests.swift */,
+				2E48682920F5F2D5009E5371 /* ATManagedTests.swift */,
 				2EAF5C0B20ECB15F007A22EB /* Info.plist */,
 			);
 			path = ATCoreDataTests;
@@ -148,6 +197,7 @@
 				TargetAttributes = {
 					2EAF5BFA20ECB15E007A22EB = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 					2EAF5C0320ECB15F007A22EB = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -194,6 +244,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EAF5C3420ECB3C5007A22EB /* ATPersistentContainer.swift in Sources */,
+				2E48682420F5EACA009E5371 /* ATManaged.swift in Sources */,
+				2EAF5C3B20ECC13C007A22EB /* ATCoreData.xcdatamodeld in Sources */,
+				2E48682620F5EC80009E5371 /* NSManagedObjectContext+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +255,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EAF5C0A20ECB15F007A22EB /* ATCoreDataTests.swift in Sources */,
+				2E48682D20F5F554009E5371 /* Insertions.swift in Sources */,
+				2E48682A20F5F2D5009E5371 /* ATManagedTests.swift in Sources */,
+				2EAF5C3820ECB8F7007A22EB /* ATDataControllerMock.swift in Sources */,
+				2E48682F20F5F5A8009E5371 /* Context.swift in Sources */,
+				2EAF5C3620ECB6D1007A22EB /* ATPersistentContainerTests.swift in Sources */,
+				2EAF5C3C20ECC145007A22EB /* ATCoreData.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +397,7 @@
 		2EAF5C1020ECB15F007A22EB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -356,6 +416,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.aratech.ATCoreData;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -363,6 +424,7 @@
 		2EAF5C1120ECB15F007A22EB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -388,6 +450,7 @@
 		2EAF5C1320ECB15F007A22EB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = ATCoreDataTests/Info.plist;
@@ -405,6 +468,7 @@
 		2EAF5C1420ECB15F007A22EB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = ATCoreDataTests/Info.plist;
@@ -450,6 +514,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2EAF5C3920ECC13C007A22EB /* ATCoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2EAF5C3A20ECC13C007A22EB /* ATCoreData.xcdatamodel */,
+			);
+			currentVersion = 2EAF5C3A20ECC13C007A22EB /* ATCoreData.xcdatamodel */;
+			path = ATCoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 2EAF5BF220ECB15E007A22EB /* Project object */;
 }
