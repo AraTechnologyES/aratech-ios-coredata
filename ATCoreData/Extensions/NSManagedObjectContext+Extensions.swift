@@ -8,7 +8,7 @@
 
 import CoreData
 
-extension NSManagedObjectContext {
+public extension NSManagedObjectContext {
 	
 	public func insertObject<A: NSManagedObject>() -> A where A: ATManaged {
 		guard let obj = NSEntityDescription.insertNewObject(forEntityName: A.entityName, into: self) as? A else { fatalError("Wrong object type") }
@@ -70,7 +70,7 @@ extension NSManagedObjectContext {
 private let SingleObjectCacheKey = "SingleObjectCache"
 private typealias SingleObjectCache = [String: NSManagedObject]
 
-extension NSManagedObjectContext {
+public extension NSManagedObjectContext {
 	public func set(_ object: NSManagedObject?, forSingleObjectCacheKey key: String) {
 		var cache = userInfo[SingleObjectCacheKey] as? SingleObjectCache ?? [:]
 		cache[key] = object

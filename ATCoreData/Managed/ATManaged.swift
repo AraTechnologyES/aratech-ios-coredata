@@ -18,11 +18,11 @@ public protocol ATManaged: class, NSFetchRequestResult {
 
 public protocol DefaultManaged: ATManaged {}
 
-extension DefaultManaged {
+public extension DefaultManaged {
 	public static var defaultPredicate: NSPredicate { return NSPredicate(value: true) }
 }
 
-extension ATManaged {
+public extension ATManaged {
 	
 	public static var defaultSortDescriptors: [NSSortDescriptor] { return [] }
 	public static var defaultPredicate: NSPredicate { return NSPredicate(value: true) }
@@ -52,7 +52,7 @@ extension ATManaged {
 	
 }
 
-extension ATManaged where Self: NSManagedObject {
+public extension ATManaged where Self: NSManagedObject {
 	
 	public static var managedEntityDescription: NSEntityDescription {
 		return entity()
@@ -104,7 +104,7 @@ extension ATManaged where Self: NSManagedObject {
 	
 }
 
-extension ATManaged where Self: NSManagedObject {
+public extension ATManaged where Self: NSManagedObject {
 	public static func fetchSingleObject(in context: NSManagedObjectContext, cacheKey: String, configure: (NSFetchRequest<Self>) -> Void) -> Self? {
 		if let cached = context.object(forSingleObjectCacheKey: cacheKey) as? Self { return cached
 		}

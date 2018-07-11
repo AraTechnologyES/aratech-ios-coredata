@@ -16,6 +16,15 @@
 		2E48684220F6144F009E5371 /* ATPersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAF5C3320ECB3C5007A22EB /* ATPersistentContainer.swift */; };
 		2E48684320F61452009E5371 /* ATManaged.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E48682320F5EACA009E5371 /* ATManaged.swift */; };
 		2E48684420F61455009E5371 /* NSManagedObjectContext+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E48682520F5EC80009E5371 /* NSManagedObjectContext+Extensions.swift */; };
+		2E48684E20F618DE009E5371 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E48684D20F618DE009E5371 /* AppDelegate.swift */; };
+		2E48685020F618DE009E5371 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E48684F20F618DE009E5371 /* ViewController.swift */; };
+		2E48685320F618DE009E5371 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E48685120F618DE009E5371 /* Main.storyboard */; };
+		2E48685620F618DE009E5371 /* ATCoreData_Example_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2E48685420F618DE009E5371 /* ATCoreData_Example_iOS.xcdatamodeld */; };
+		2E48685820F618DF009E5371 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E48685720F618DF009E5371 /* Assets.xcassets */; };
+		2E48685B20F618DF009E5371 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E48685920F618DF009E5371 /* LaunchScreen.storyboard */; };
+		2E48686320F6193C009E5371 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E48686220F6193C009E5371 /* DataController.swift */; };
+		2E48686B20F619DF009E5371 /* ATCoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E48683A20F61423009E5371 /* ATCoreData.framework */; };
+		2E48686C20F619DF009E5371 /* ATCoreData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2E48683A20F61423009E5371 /* ATCoreData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2EAF5C0520ECB15F007A22EB /* ATCoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EAF5BFB20ECB15E007A22EB /* ATCoreData.framework */; };
 		2EAF5C0C20ECB15F007A22EB /* ATCoreData.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EAF5BFE20ECB15E007A22EB /* ATCoreData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2EAF5C3420ECB3C5007A22EB /* ATPersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAF5C3320ECB3C5007A22EB /* ATPersistentContainer.swift */; };
@@ -26,6 +35,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2E48686920F619D8009E5371 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2EAF5BF220ECB15E007A22EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E48683920F61423009E5371;
+			remoteInfo = "ATCoreData iOS";
+		};
 		2EAF5C0620ECB15F007A22EB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2EAF5BF220ECB15E007A22EB /* Project object */;
@@ -35,15 +51,38 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2E48686D20F619DF009E5371 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2E48686C20F619DF009E5371 /* ATCoreData.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		2E48682320F5EACA009E5371 /* ATManaged.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATManaged.swift; sourceTree = "<group>"; };
 		2E48682520F5EC80009E5371 /* NSManagedObjectContext+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Extensions.swift"; sourceTree = "<group>"; };
 		2E48682920F5F2D5009E5371 /* ATManagedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATManagedTests.swift; sourceTree = "<group>"; };
 		2E48682C20F5F554009E5371 /* Insertions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Insertions.swift; sourceTree = "<group>"; };
 		2E48682E20F5F5A8009E5371 /* Context.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
-		2E48683A20F61423009E5371 /* ATCoreData_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ATCoreData_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E48683A20F61423009E5371 /* ATCoreData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ATCoreData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E48683C20F61423009E5371 /* ATCoreData_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATCoreData_iOS.h; sourceTree = "<group>"; };
 		2E48683D20F61423009E5371 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E48684B20F618DE009E5371 /* ATCoreData Example iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ATCoreData Example iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E48684D20F618DE009E5371 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2E48684F20F618DE009E5371 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2E48685220F618DE009E5371 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2E48685520F618DE009E5371 /* ATCoreData_Example_iOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ATCoreData_Example_iOS.xcdatamodel; sourceTree = "<group>"; };
+		2E48685720F618DF009E5371 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2E48685A20F618DF009E5371 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2E48685C20F618DF009E5371 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E48686220F6193C009E5371 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		2EAF5BFB20ECB15E007A22EB /* ATCoreData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ATCoreData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EAF5BFE20ECB15E007A22EB /* ATCoreData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATCoreData.h; sourceTree = "<group>"; };
 		2EAF5BFF20ECB15E007A22EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -60,6 +99,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E48684820F618DE009E5371 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E48686B20F619DF009E5371 /* ATCoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,13 +162,37 @@
 			path = "ATCoreData-iOS";
 			sourceTree = "<group>";
 		};
+		2E48684C20F618DE009E5371 /* ATCoreData Example iOS */ = {
+			isa = PBXGroup;
+			children = (
+				2E48684D20F618DE009E5371 /* AppDelegate.swift */,
+				2E48684F20F618DE009E5371 /* ViewController.swift */,
+				2E48686220F6193C009E5371 /* DataController.swift */,
+				2E48685120F618DE009E5371 /* Main.storyboard */,
+				2E48685720F618DF009E5371 /* Assets.xcassets */,
+				2E48685920F618DF009E5371 /* LaunchScreen.storyboard */,
+				2E48685C20F618DF009E5371 /* Info.plist */,
+				2E48685420F618DE009E5371 /* ATCoreData_Example_iOS.xcdatamodeld */,
+			);
+			path = "ATCoreData Example iOS";
+			sourceTree = "<group>";
+		};
+		2E48686020F6190C009E5371 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2EAF5BF120ECB15E007A22EB = {
 			isa = PBXGroup;
 			children = (
 				2EAF5BFD20ECB15E007A22EB /* ATCoreData */,
 				2EAF5C0820ECB15F007A22EB /* ATCoreDataTests */,
 				2E48683B20F61423009E5371 /* ATCoreData-iOS */,
+				2E48684C20F618DE009E5371 /* ATCoreData Example iOS */,
 				2EAF5BFC20ECB15E007A22EB /* Products */,
+				2E48686020F6190C009E5371 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,7 +201,8 @@
 			children = (
 				2EAF5BFB20ECB15E007A22EB /* ATCoreData.framework */,
 				2EAF5C0420ECB15F007A22EB /* ATCoreDataTests.xctest */,
-				2E48683A20F61423009E5371 /* ATCoreData_iOS.framework */,
+				2E48683A20F61423009E5371 /* ATCoreData.framework */,
+				2E48684B20F618DE009E5371 /* ATCoreData Example iOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -182,9 +254,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2E48683920F61423009E5371 /* ATCoreData-iOS */ = {
+		2E48683920F61423009E5371 /* ATCoreData iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2E48683F20F61423009E5371 /* Build configuration list for PBXNativeTarget "ATCoreData-iOS" */;
+			buildConfigurationList = 2E48683F20F61423009E5371 /* Build configuration list for PBXNativeTarget "ATCoreData iOS" */;
 			buildPhases = (
 				2E48683520F61423009E5371 /* Sources */,
 				2E48683620F61423009E5371 /* Frameworks */,
@@ -195,10 +267,29 @@
 			);
 			dependencies = (
 			);
-			name = "ATCoreData-iOS";
+			name = "ATCoreData iOS";
 			productName = "ATCoreData-iOS";
-			productReference = 2E48683A20F61423009E5371 /* ATCoreData_iOS.framework */;
+			productReference = 2E48683A20F61423009E5371 /* ATCoreData.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		2E48684A20F618DE009E5371 /* ATCoreData Example iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E48685D20F618DF009E5371 /* Build configuration list for PBXNativeTarget "ATCoreData Example iOS" */;
+			buildPhases = (
+				2E48684720F618DE009E5371 /* Sources */,
+				2E48684820F618DE009E5371 /* Frameworks */,
+				2E48684920F618DE009E5371 /* Resources */,
+				2E48686D20F619DF009E5371 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E48686A20F619D8009E5371 /* PBXTargetDependency */,
+			);
+			name = "ATCoreData Example iOS";
+			productName = "ATCoreData Example iOS";
+			productReference = 2E48684B20F618DE009E5371 /* ATCoreData Example iOS.app */;
+			productType = "com.apple.product-type.application";
 		};
 		2EAF5BFA20ECB15E007A22EB /* ATCoreData */ = {
 			isa = PBXNativeTarget;
@@ -249,6 +340,9 @@
 					2E48683920F61423009E5371 = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
+					2E48684A20F618DE009E5371 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
 					2EAF5BFA20ECB15E007A22EB = {
 						CreatedOnToolsVersion = 9.4.1;
 						LastSwiftMigration = 0940;
@@ -264,6 +358,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 2EAF5BF120ECB15E007A22EB;
 			productRefGroup = 2EAF5BFC20ECB15E007A22EB /* Products */;
@@ -271,8 +366,9 @@
 			projectRoot = "";
 			targets = (
 				2EAF5BFA20ECB15E007A22EB /* ATCoreData */,
-				2E48683920F61423009E5371 /* ATCoreData-iOS */,
+				2E48683920F61423009E5371 /* ATCoreData iOS */,
 				2EAF5C0320ECB15F007A22EB /* ATCoreDataTests */,
+				2E48684A20F618DE009E5371 /* ATCoreData Example iOS */,
 			);
 		};
 /* End PBXProject section */
@@ -282,6 +378,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E48684920F618DE009E5371 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E48685B20F618DF009E5371 /* LaunchScreen.storyboard in Resources */,
+				2E48685820F618DF009E5371 /* Assets.xcassets in Resources */,
+				2E48685320F618DE009E5371 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +418,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2E48684720F618DE009E5371 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E48685020F618DE009E5371 /* ViewController.swift in Sources */,
+				2E48686320F6193C009E5371 /* DataController.swift in Sources */,
+				2E48684E20F618DE009E5371 /* AppDelegate.swift in Sources */,
+				2E48685620F618DE009E5371 /* ATCoreData_Example_iOS.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2EAF5BF620ECB15E007A22EB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -339,12 +456,36 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		2E48686A20F619D8009E5371 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E48683920F61423009E5371 /* ATCoreData iOS */;
+			targetProxy = 2E48686920F619D8009E5371 /* PBXContainerItemProxy */;
+		};
 		2EAF5C0720ECB15F007A22EB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 2EAF5BFA20ECB15E007A22EB /* ATCoreData */;
 			targetProxy = 2EAF5C0620ECB15F007A22EB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2E48685120F618DE009E5371 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E48685220F618DE009E5371 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2E48685920F618DF009E5371 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E48685A20F618DF009E5371 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2E48684020F61423009E5371 /* Debug */ = {
@@ -365,7 +506,7 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aratech.ATCoreData-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = ATCoreData;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -391,9 +532,52 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aratech.ATCoreData-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = ATCoreData;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2E48685E20F618DF009E5371 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "ATCoreData Example iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aratech.ATCoreData-Example-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2E48685F20F618DF009E5371 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "ATCoreData Example iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aratech.ATCoreData-Example-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -611,11 +795,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2E48683F20F61423009E5371 /* Build configuration list for PBXNativeTarget "ATCoreData-iOS" */ = {
+		2E48683F20F61423009E5371 /* Build configuration list for PBXNativeTarget "ATCoreData iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2E48684020F61423009E5371 /* Debug */,
 				2E48684120F61423009E5371 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E48685D20F618DF009E5371 /* Build configuration list for PBXNativeTarget "ATCoreData Example iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E48685E20F618DF009E5371 /* Debug */,
+				2E48685F20F618DF009E5371 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -650,6 +843,16 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
+		2E48685420F618DE009E5371 /* ATCoreData_Example_iOS.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2E48685520F618DE009E5371 /* ATCoreData_Example_iOS.xcdatamodel */,
+			);
+			currentVersion = 2E48685520F618DE009E5371 /* ATCoreData_Example_iOS.xcdatamodel */;
+			path = ATCoreData_Example_iOS.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
 		2EAF5C3920ECC13C007A22EB /* ATCoreData.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (

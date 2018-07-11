@@ -8,14 +8,14 @@
 
 import CoreData
 
-class ATPersistentContainer: NSPersistentContainer {
+open class ATPersistentContainer: NSPersistentContainer {
 	
 	/// Elimina masivamente los objetos especificados mediante `NSFetchRequest`
 	///
 	/// - Parameter request: Peticiones que especifican qué objetos borrar
 	///
 	/// - Creditos: @MarcoSantaDev
-	func batchDelete(for requests: [NSFetchRequest<NSFetchRequestResult>]) {
+	open func batchDelete(for requests: [NSFetchRequest<NSFetchRequestResult>]) {
 		performBackgroundTask { privateManagedObjectContext in
 			
 			for request in requests {
@@ -46,7 +46,7 @@ class ATPersistentContainer: NSPersistentContainer {
 	/// Guarda el contexto principal
 	///
 	/// - Creditos: @MarcoSantaDev
-	@objc func contextSave(_ notification: Notification) {
+	@objc open func contextSave(_ notification: Notification) {
 		// Retrieves the context saved from the notification
 		guard let context = notification.object as? NSManagedObjectContext else { return }
 		// Checks if the parent context is the main one
