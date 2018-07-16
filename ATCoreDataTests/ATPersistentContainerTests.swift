@@ -31,7 +31,7 @@ class ATPersistentContainerTests: XCTestCase {
 		
 		do {
 			// When
-			try self.context.save()
+			try self.context.saveOrLogAndThrow()
 			
 			// Then
 			usersFetched = try? self.context.fetch(userRequest)

@@ -15,6 +15,30 @@ public extension NSManagedObjectContext {
 		return obj
 	}
 	
+	/// Guarda los cambios en el contexto o loguea el error obtenido al intentarlo.
+	/// Credits to [Andyshep](https://github.com/andyshep/Palettes)
+	public func saveOrLog() {
+		do {
+			try saveOrLogAndThrow()
+		} catch { }
+	}
+	
+	/// Guarda los cambios en el contexto o loguea el error obtenido y lo lanza
+	///
+	/// - Throws: El error obtenido al guardar el contexto
+	///
+	/// Credits to [Andyshep](https://github.com/andyshep/Palettes)
+	public func saveOrLogAndThrow() throws {
+		do {
+			if self.hasChanges {
+				try self.save()
+			}
+		} catch let nsError as NSError {
+			NSLog("%@", nsError.localizedDescription)
+			throw nsError
+		}
+	}
+	
 //	private var store: NSPersistentStore {
 //		guard let psc = persistentStoreCoordinator else { fatalError("PSC missing") }
 //		guard let store = psc.persistentStores.first else { fatalError("No Store") }
