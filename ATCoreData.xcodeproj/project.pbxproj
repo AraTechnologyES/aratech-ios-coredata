@@ -33,6 +33,7 @@
 		2EAF5C3820ECB8F7007A22EB /* ATDataControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAF5C3720ECB8F7007A22EB /* ATDataControllerMock.swift */; };
 		2EC2104920F6277D00BDC32F /* RemoteObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC2104820F6277D00BDC32F /* RemoteObject.swift */; };
 		2EC2104D20F628B600BDC32F /* RemoteObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC2104820F6277D00BDC32F /* RemoteObject.swift */; };
+		2ED486A6214FC09E00478FFC /* ResultsControllerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED486A4214FBF2700478FFC /* ResultsControllerDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,7 @@
 		2EAF5C3520ECB6D1007A22EB /* ATPersistentContainerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATPersistentContainerTests.swift; sourceTree = "<group>"; };
 		2EAF5C3720ECB8F7007A22EB /* ATDataControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATDataControllerMock.swift; sourceTree = "<group>"; };
 		2EC2104820F6277D00BDC32F /* RemoteObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteObject.swift; sourceTree = "<group>"; };
+		2ED486A4214FBF2700478FFC /* ResultsControllerDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsControllerDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				2EAF5C3320ECB3C5007A22EB /* ATPersistentContainer.swift */,
+				2ED486A4214FBF2700478FFC /* ResultsControllerDataSource.swift */,
 				2E48683320F60A21009E5371 /* Managed */,
 				2EC2104720F6276300BDC32F /* Remote */,
 				2E48683420F60A3D009E5371 /* Extensions */,
@@ -425,6 +428,7 @@
 			files = (
 				2E48684320F61452009E5371 /* ATManaged.swift in Sources */,
 				2E48684220F6144F009E5371 /* ATPersistentContainer.swift in Sources */,
+				2ED486A6214FC09E00478FFC /* ResultsControllerDataSource.swift in Sources */,
 				2EC2104D20F628B600BDC32F /* RemoteObject.swift in Sources */,
 				2E48684420F61455009E5371 /* NSManagedObjectContext+Extensions.swift in Sources */,
 			);
