@@ -25,13 +25,14 @@
 		2E48686320F6193C009E5371 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E48686220F6193C009E5371 /* DataController.swift */; };
 		2E48686B20F619DF009E5371 /* ATCoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E48683A20F61423009E5371 /* ATCoreData.framework */; };
 		2E48686C20F619DF009E5371 /* ATCoreData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2E48683A20F61423009E5371 /* ATCoreData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2E76D89F20F6379B00266950 /* ManagedBaseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E76D89E20F6379B00266950 /* ManagedBaseClass.swift */; };
 		2EAF5C0520ECB15F007A22EB /* ATCoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EAF5BFB20ECB15E007A22EB /* ATCoreData.framework */; };
 		2EAF5C0C20ECB15F007A22EB /* ATCoreData.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EAF5BFE20ECB15E007A22EB /* ATCoreData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2EAF5C3420ECB3C5007A22EB /* ATPersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAF5C3320ECB3C5007A22EB /* ATPersistentContainer.swift */; };
 		2EAF5C3620ECB6D1007A22EB /* ATPersistentContainerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAF5C3520ECB6D1007A22EB /* ATPersistentContainerTests.swift */; };
 		2EAF5C3820ECB8F7007A22EB /* ATDataControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAF5C3720ECB8F7007A22EB /* ATDataControllerMock.swift */; };
-		2EAF5C3B20ECC13C007A22EB /* ATCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2EAF5C3920ECC13C007A22EB /* ATCoreData.xcdatamodeld */; };
-		2EAF5C3C20ECC145007A22EB /* ATCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2EAF5C3920ECC13C007A22EB /* ATCoreData.xcdatamodeld */; };
+		2EC2104920F6277D00BDC32F /* RemoteObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC2104820F6277D00BDC32F /* RemoteObject.swift */; };
+		2EC2104D20F628B600BDC32F /* RemoteObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC2104820F6277D00BDC32F /* RemoteObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		2E48685A20F618DF009E5371 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E48685C20F618DF009E5371 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E48686220F6193C009E5371 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		2E76D89E20F6379B00266950 /* ManagedBaseClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedBaseClass.swift; sourceTree = "<group>"; };
 		2EAF5BFB20ECB15E007A22EB /* ATCoreData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ATCoreData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EAF5BFE20ECB15E007A22EB /* ATCoreData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATCoreData.h; sourceTree = "<group>"; };
 		2EAF5BFF20ECB15E007A22EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -91,7 +93,7 @@
 		2EAF5C3320ECB3C5007A22EB /* ATPersistentContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATPersistentContainer.swift; sourceTree = "<group>"; };
 		2EAF5C3520ECB6D1007A22EB /* ATPersistentContainerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATPersistentContainerTests.swift; sourceTree = "<group>"; };
 		2EAF5C3720ECB8F7007A22EB /* ATDataControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATDataControllerMock.swift; sourceTree = "<group>"; };
-		2EAF5C3A20ECC13C007A22EB /* ATCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ATCoreData.xcdatamodel; sourceTree = "<group>"; };
+		2EC2104820F6277D00BDC32F /* RemoteObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 				2E48685920F618DF009E5371 /* LaunchScreen.storyboard */,
 				2E48685C20F618DF009E5371 /* Info.plist */,
 				2E48685420F618DE009E5371 /* ATCoreData_Example_iOS.xcdatamodeld */,
+				2E76D89E20F6379B00266950 /* ManagedBaseClass.swift */,
 			);
 			path = "ATCoreData Example iOS";
 			sourceTree = "<group>";
@@ -212,8 +215,8 @@
 			children = (
 				2EAF5C3320ECB3C5007A22EB /* ATPersistentContainer.swift */,
 				2E48683320F60A21009E5371 /* Managed */,
+				2EC2104720F6276300BDC32F /* Remote */,
 				2E48683420F60A3D009E5371 /* Extensions */,
-				2EAF5C3920ECC13C007A22EB /* ATCoreData.xcdatamodeld */,
 				2EAF5BFE20ECB15E007A22EB /* ATCoreData.h */,
 				2EAF5BFF20ECB15E007A22EB /* Info.plist */,
 			);
@@ -230,6 +233,14 @@
 				2EAF5C0B20ECB15F007A22EB /* Info.plist */,
 			);
 			path = ATCoreDataTests;
+			sourceTree = "<group>";
+		};
+		2EC2104720F6276300BDC32F /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				2EC2104820F6277D00BDC32F /* RemoteObject.swift */,
+			);
+			path = Remote;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -414,6 +425,7 @@
 			files = (
 				2E48684320F61452009E5371 /* ATManaged.swift in Sources */,
 				2E48684220F6144F009E5371 /* ATPersistentContainer.swift in Sources */,
+				2EC2104D20F628B600BDC32F /* RemoteObject.swift in Sources */,
 				2E48684420F61455009E5371 /* NSManagedObjectContext+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,6 +438,7 @@
 				2E48686320F6193C009E5371 /* DataController.swift in Sources */,
 				2E48684E20F618DE009E5371 /* AppDelegate.swift in Sources */,
 				2E48685620F618DE009E5371 /* ATCoreData_Example_iOS.xcdatamodeld in Sources */,
+				2E76D89F20F6379B00266950 /* ManagedBaseClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,7 +448,7 @@
 			files = (
 				2EAF5C3420ECB3C5007A22EB /* ATPersistentContainer.swift in Sources */,
 				2E48682420F5EACA009E5371 /* ATManaged.swift in Sources */,
-				2EAF5C3B20ECC13C007A22EB /* ATCoreData.xcdatamodeld in Sources */,
+				2EC2104920F6277D00BDC32F /* RemoteObject.swift in Sources */,
 				2E48682620F5EC80009E5371 /* NSManagedObjectContext+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -449,7 +462,6 @@
 				2EAF5C3820ECB8F7007A22EB /* ATDataControllerMock.swift in Sources */,
 				2E48682F20F5F5A8009E5371 /* Context.swift in Sources */,
 				2EAF5C3620ECB6D1007A22EB /* ATPersistentContainerTests.swift in Sources */,
-				2EAF5C3C20ECC145007A22EB /* ATCoreData.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -850,16 +862,6 @@
 			);
 			currentVersion = 2E48685520F618DE009E5371 /* ATCoreData_Example_iOS.xcdatamodel */;
 			path = ATCoreData_Example_iOS.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-		2EAF5C3920ECC13C007A22EB /* ATCoreData.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				2EAF5C3A20ECC13C007A22EB /* ATCoreData.xcdatamodel */,
-			);
-			currentVersion = 2EAF5C3A20ECC13C007A22EB /* ATCoreData.xcdatamodel */;
-			path = ATCoreData.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
