@@ -38,7 +38,6 @@ open class ResultsControllerDataSource<Model: NSManagedObject>: NSObject, UITabl
 		
 		return cell
 	}
-	
 }
 
 open class SectionedResultsControllerDataSource<Model: NSManagedObject>: ResultsControllerDataSource<Model> {

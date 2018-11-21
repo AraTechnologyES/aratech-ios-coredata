@@ -104,6 +104,71 @@ public extension ATManaged where Self: NSManagedObject {
 	
 }
 
+public extension ATManaged where Self: NSManagedObject & RemoteIdentificable {
+	
+	typealias RemoteID = String
+	
+	static func predicate(remoteID: RemoteID) -> NSPredicate {
+		return NSPredicate(format: "remoteID = %@", remoteID)
+	}
+	
+	static func predicate(remoteObject: RemoteObject) -> NSPredicate {
+		return predicate(remoteID: remoteObject.remoteID)
+	}
+	
+	public typealias ConfigureObjectBlock = (Self) -> Void
+	
+	/// Busca en el contexto el objeto con el identificador remoto provisto
+	///
+	/// - Parameters:
+	///   - context: contexto en el que buscar
+	///   - remoteObject: identificador del objeto remoto a buscar
+	/// - Returns: El objeto encontrado o nulo
+	public static func findOrFetch(in context: NSManagedObjectContext, remoteID: RemoteID) -> Self? {
+		let predicate = Self.predicate(remoteID: remoteID)
+		return findOrFetch(in: context, matching: predicate)
+	}
+	
+	/// Busca en el contexto el objeto con el identificador remoto provisto por el `RemoteObject`
+	///
+	/// - Parameters:
+	///   - context: contexto en el que buscar
+	///   - remoteObject: objeto remoto a buscar
+	/// - Returns: El objeto encontrado o nulo
+	public static func findOrFetch(in context: NSManagedObjectContext, remoteObject: RemoteObject) -> Self? {
+		return findOrFetch(in: context, remoteID: remoteObject.remoteID)
+	}
+	
+	/// Busca o crea el objeto en el contexto con el identificador remoto provisto
+	///
+	/// - Parameters:
+	///   - context: contexto en el que buscar
+	///   - remoteID: identificador del objeto remoto a buscar o crear
+	///   - configure: bloque para configurar el objeto recuperado o creado
+	/// - Returns: El objeto recuperado o creado
+	public static func findOrCreate(in context: NSManagedObjectContext, remoteID: RemoteID, configure: ConfigureObjectBlock) -> Self {
+		let predicate = Self.predicate(remoteID: remoteID)
+		let localObject: Self = Self.findOrCreate(in: context, matching: predicate) { (remoteIdentificable) in
+			remoteIdentificable.remoteID = remoteID
+		}
+		
+		configure(localObject)
+		
+		return localObject
+	}
+	
+	/// Busca o crea el objeto en el contexto con el identificador remoto provisto por el `RemoteObject`
+	///
+	/// - Parameters:
+	///   - context: contexto en el que buscar
+	///   - remoteObject: objeto remoto a buscar o crear
+	///   - configure: bloque para configurar el objeto recuperado o creado
+	/// - Returns: El objeto recuperado o creado
+	public static func findOrCreate(in context: NSManagedObjectContext, remoteObject: RemoteObject, configure: ConfigureObjectBlock) -> Self {
+		return findOrCreate(in: context, remoteID: remoteObject.remoteID, configure: configure)
+	}
+}
+
 public extension ATManaged where Self: NSManagedObject {
 	public static func fetchSingleObject(in context: NSManagedObjectContext, cacheKey: String, configure: (NSFetchRequest<Self>) -> Void) -> Self? {
 		if let cached = context.object(forSingleObjectCacheKey: cacheKey) as? Self { return cached
